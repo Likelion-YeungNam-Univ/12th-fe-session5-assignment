@@ -9,6 +9,10 @@ function App() {
     { id: 4, info: { name: "포도", price: 2500 } },
   ];
   
+  //각 아이템 클릭 시 알림핸들러
+  const handleClick=(fruitname)=>{
+    alert(fruitname);
+  }
   return (
     <div>
       <h2>상품 목록</h2>
