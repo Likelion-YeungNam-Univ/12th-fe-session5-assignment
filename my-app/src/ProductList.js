@@ -9,17 +9,18 @@ function ProductList() {
     { id: 4, info: { name: "포도", price: 2500 } },
   ];
 
-  const elements = products.map((product)=>(
-    <li 
-    onClick={() => {
-      alertName(product.info.name);
-    }}
-    key={product.id}>{product.info.name} - {product.info.price}원</li>
-  ));
   return (
-    <div>
+      <div>
       <h1>상품 목록</h1>
-      <ul>{elements}</ul>
+      <ul>
+        {products.map((product)=>(
+          <li 
+          onClick={() => {
+            alertName(product.info.name);
+          }}
+          key={product.id}>{product.info.name} - {product.info.price}원</li>
+        ))}
+        </ul>
     </div>
   );
 }
