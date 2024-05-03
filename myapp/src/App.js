@@ -9,7 +9,7 @@ function App() {
   ];
 
   // 해당 품목 name 알림 창 생성 함수
-  function handleSubmit(product) {
+  function alertName(product) {
     alert(product.info.name);
   }
 
@@ -20,8 +20,8 @@ function App() {
         {/* map() 이용하여 요소 생성 반복*/}
         {products.map((product) => (
             // key속성은 고유한 값인 id값으로 설정
-            // 상품 클릭 시 해당 품목을 handleSubmit()로 전달
-            <li key={product.id} onClick={() => {handleSubmit(product)}}>
+            // 상품 클릭 시 해당 품목을 alertName()로 전달
+            <li key={product.id} onClick={() => {alertName(product)}}>
               {product.info.name} - {product.info.price}원
             </li>
         ))}
