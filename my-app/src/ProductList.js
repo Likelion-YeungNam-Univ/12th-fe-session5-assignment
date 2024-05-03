@@ -24,8 +24,8 @@ function ProductList() {
   );
 }
 
-const alertName = (a) => {
-  alert(a);
+const alertName = (name) => {
+  alert(name);
 }
 
 export default ProductList;
