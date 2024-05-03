@@ -9,14 +9,16 @@ function App() {
     { id: 4, info: { name: "포도", price: 2500 } },
   ];
 
-
+  let showFruitName = (item) => {
+    alert(item.info.name);
+  }
 
   return (
     <div className="App">
       <h1>상품 목록</h1>
       <ul>
         { products.map(item => {
-            return <li key={item.id}>{item.info.name} - {item.info.price}</li>
+            return <li key={item.id} onClick={() => showFruitName(item)}>{item.info.name} - {item.info.price}</li>
         }) }
       </ul>
       
