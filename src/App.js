@@ -8,13 +8,13 @@ function List(){
     { id: 4, info: { name: "포도", price: 2500 } },
   ];
   
-  const click = (listItem) => {
+  const listItemClick = (listItem) => {
     alert(listItem);
   }
 
   const lists = products.map((list)=>
     <ul>
-      <li key="list.id" onClick={() => click(list.info.name)}><span>{list.info.name}</span> - {list.info.price}원</li>
+      <li key="list.id" onClick={() => listItemClick(list.info.name)}><span>{list.info.name}</span> - {list.info.price}원</li>
     </ul>
   )
 
