@@ -27,7 +27,7 @@ function App() {
                 handleClick(fruit.info.name);
               }}
             >
-              {" "}{fruit.info.name} - {fruit.info.price}원{" "}
+              {fruit.info.name} - {fruit.info.price}원
             </li>
           )
         )}
