@@ -29,3 +29,4 @@ export default FruitList;
 //fruit list 123
 //name을 지운뒤 다시시도
 //again attempt
+//addcommitpush once again
