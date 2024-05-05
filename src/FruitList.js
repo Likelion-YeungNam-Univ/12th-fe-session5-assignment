@@ -27,3 +27,4 @@ export default FruitList;
 //once again
 //starting from first
 //fruit list 123
+//name을 지운뒤 다시시도
